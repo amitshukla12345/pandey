@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className="container top-bar-content">
           <div className="top-bar-contact">
             <Mail size={16} />
-            <a href="mailto:manojkumarpandey531@gmail.com">manojkumarpandey531@gmail.com</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=manojkumarpandey531@gmail.com" target="_blank" rel="noreferrer" style={{ textDecoration: 'underline' }}>manojkumarpandey531@gmail.com</a>
           </div>
           <div className="top-bar-social">
             <a href="#" aria-label="Facebook"><Facebook size={16} /></a>

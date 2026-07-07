@@ -51,7 +51,7 @@ const Footer = () => {
           <ul className="footer-contact">
             <li>
               <MapPin className="text-primary" size={20} />
-              <span>123 MG Road, Bengaluru, India</span>
+              <span>Lodha crown orchid k911 khuni taloja road dombivali est pin 421204</span>
             </li>
             <li>
               <Phone className="text-primary" size={20} />
@@ -59,7 +59,7 @@ const Footer = () => {
             </li>
             <li>
               <Mail className="text-primary" size={20} />
-              <a href="mailto:manojkumarpandey531@gmail.com">manojkumarpandey531@gmail.com</a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=manojkumarpandey531@gmail.com" target="_blank" rel="noreferrer" style={{ textDecoration: 'underline' }}>manojkumarpandey531@gmail.com</a>
             </li>
           </ul>
         </div>

@@ -494,7 +494,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 style={{ fontWeight: '600' }}>Our Office</h4>
-                  <p style={{ color: 'var(--text-light)' }}>123 MG Road, Bengaluru, India</p>
+                  <p style={{ color: 'var(--text-light)' }}>Lodha crown orchid k911 khuni taloja road dombivali est pin 421204</p>
                 </div>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
@@ -512,7 +512,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 style={{ fontWeight: '600' }}>Email Us</h4>
-                  <a href="mailto:manojkumarpandey531@gmail.com" style={{ color: 'var(--text-light)' }}>manojkumarpandey531@gmail.com</a>
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=manojkumarpandey531@gmail.com" target="_blank" rel="noreferrer" style={{ color: 'var(--text-light)', textDecoration: 'underline' }}>manojkumarpandey531@gmail.com</a>
                 </div>
               </div>
             </div>
@@ -520,7 +520,7 @@ const Contact = () => {
             {/* Google Map Embed */}
             <div style={{ width: '100%', height: '300px', borderRadius: 'var(--radius-lg)', overflow: 'hidden', boxShadow: 'var(--shadow-sm)' }}>
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.973434685025!2d77.60477141526978!3d12.973549290853755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167e45260195%3A0x6b4c102a9e3a68ea!2sMG%20Road%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1689332155891!5m2!1sen!2sin" 
+                src="https://maps.google.com/maps?q=Lodha+crown+orchid+k911+khuni+taloja+road+dombivali+est+pin+421204&t=&z=13&ie=UTF8&iwloc=&output=embed"
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 

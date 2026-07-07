@@ -20,7 +20,7 @@ const OurCars = () => {
           {cars.map((car, index) => (
             <div key={index} className="car-card">
               <div className="car-img-wrapper">
-                <img src={car.img} alt={car.name} className="car-img" />
+                <img src={`${import.meta.env.BASE_URL}${car.img}`} alt={car.name} className="car-img" />
               </div>
               <div className="car-info">
                 <h3>{car.name}</h3>
