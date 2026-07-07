@@ -4,9 +4,9 @@ import '../pages/Home.css'; // Reusing Home CSS for car cards
 
 const OurCars = () => {
   const cars = [
-    { name: 'Maruti WagonR', seats: 4, ac: true, luggage: '2 Bags', img: '/images/wagonr.png' },
-    { name: 'Swift Dzire', seats: 4, ac: true, luggage: '3 Bags', img: '/images/swift_dzire.png' },
-    { name: 'Maruti Ertiga', seats: 6, ac: true, luggage: '4 Bags', img: '/images/ertiga.jpg' },
+    { name: 'Maruti WagonR', seats: 4, ac: true, luggage: '2 Bags', img: 'images/wagonr.png' },
+    { name: 'Swift Dzire', seats: 4, ac: true, luggage: '3 Bags', img: 'images/swift_dzire.png' },
+    { name: 'Maruti Ertiga', seats: 6, ac: true, luggage: '4 Bags', img: 'images/ertiga.jpg' },
     // Can add more here
   ];
 
