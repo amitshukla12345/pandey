@@ -152,6 +152,12 @@
   gap: 1rem;
 }
 
+@media (max-width: 768px) {
+  .about-buttons {
+    justify-content: center;
+  }
+}
+
 .btn-premium-primary,
 .btn-premium-secondary {
   padding: 1rem 2.5rem;
