@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amitshukla12345.github.io/pandey/sitemap.xml
