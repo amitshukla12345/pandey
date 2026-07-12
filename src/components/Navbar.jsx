@@ -106,10 +106,10 @@ const Navbar = () => {
             <Link to="/contact" className={`mobile-nav-link ${isActive('/contact') ? 'active' : ''}`} onClick={closeMenu}>Contact Us</Link>
           </nav>
           <div className="mobile-menu-footer">
-            <a href="https://wa.me/918369469197" target="_blank" rel="noreferrer" className="btn btn-primary w-full justify-center">
+            <a href="https://wa.me/918369469197" target="_blank" rel="noreferrer" className="btn btn-primary justify-center">
               Book on WhatsApp <WhatsAppIcon size={20} />
             </a>
-            <a href="tel:+918369469197" className="btn btn-outline w-full justify-center mt-4">
+            <a href="tel:+918369469197" className="btn btn-outline justify-center">
               Call Us
             </a>
           </div>
