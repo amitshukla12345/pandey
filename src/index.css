@@ -1,18 +1,21 @@
 :root {
-  --primary: #facc15; /* Yellow */
-  --primary-hover: #eab308;
-  --secondary: #171717; /* Black */
+  --primary: #FFC107;
+  /* Yellow */
+  --primary-hover: #E0A800;
+  --secondary: #171717;
+  /* Black */
   --secondary-hover: #262626;
   --background: #fafafa;
   --text-dark: #171717;
   --text-light: #737373;
   --white: #ffffff;
-  
+  --surface: #ffffff;
+
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  
+
   --radius: 0.5rem;
   --radius-lg: 1rem;
 }
@@ -23,13 +26,14 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   width: 100%;
 }
 
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: var(--background);
   color: var(--text-dark);
   line-height: 1.5;
@@ -157,14 +161,32 @@ select.input-field {
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-in {
   animation: fadeIn 0.8s ease forwards;
 }
 
-.delay-100 { animation-delay: 100ms; opacity: 0; }
-.delay-200 { animation-delay: 200ms; opacity: 0; }
-.delay-300 { animation-delay: 300ms; opacity: 0; }
+.delay-100 {
+  animation-delay: 100ms;
+  opacity: 0;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+  opacity: 0;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+  opacity: 0;
+}

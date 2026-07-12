@@ -84,6 +84,8 @@
 
 .footer-contact a {
   transition: color 0.3s ease;
+  word-break: break-all;
+  overflow-wrap: break-word;
 }
 
 .footer-contact a:hover {

@@ -64,7 +64,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      
+
       <div className="footer-bottom">
         <div className="container">
           <p>&copy; {new Date().getFullYear()} Premium Rides. All Rights Reserved.</p>

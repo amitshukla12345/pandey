@@ -1,0 +1,439 @@
+/* OurCars.css */
+.cars-page-container {
+  background-color: #f8f9fa; /* Light clean background for contrast */
+  padding-bottom: 6rem;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Animations */
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-up {
+  transform: translateY(30px);
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-1 { transition-delay: 100ms; }
+.delay-2 { transition-delay: 200ms; }
+.delay-3 { transition-delay: 300ms; }
+.delay-4 { transition-delay: 400ms; }
+
+/* Section 1: Hero Banner */
+.cars-hero-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 70vh;
+  background-image: url('/images/Erti.png');
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0 0 24px 24px;
+}
+
+.cars-hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(90deg, rgba(15,15,15,0.95) 0%, rgba(15,15,15,0.8) 25%, rgba(15,15,15,0) 55%);
+  z-index: 1;
+}
+
+.cars-hero-content-wrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  gap: 3rem;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .cars-hero-content-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 8%;
+  }
+  .cars-hero-left {
+    margin-left: 0;
+  }
+}
+
+.cars-hero-left {
+  flex: 1;
+  max-width: 450px;
+}
+
+.cars-hero-label {
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.cars-hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.text-yellow {
+  color: var(--primary);
+}
+
+.cars-hero-description {
+  font-size: 1.1rem;
+  color: #cccccc;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.cars-hero-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+@media (min-width: 576px) {
+  .cars-hero-features {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+}
+
+.cars-hero-feature {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.cars-feature-icon-wrapper {
+  width: 36px;
+  height: 36px;
+  background-color: var(--primary);
+  color: #000000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero Right Side - Vehicle */
+.cars-hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cars-hero-vehicle {
+  width: 100%;
+  max-width: 550px;
+  object-fit: contain;
+  animation: float 6s ease-in-out infinite;
+  filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5));
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Section 2 & 3: Fleet Headers & Cards */
+.cars-fleet-section {
+  padding: 5rem 0;
+}
+
+.cars-fleet-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.fleet-center-heading {
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.fleet-center-heading::before,
+.fleet-center-heading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 2px;
+  background-color: var(--primary);
+}
+
+.fleet-center-heading::before { left: -45px; }
+.fleet-center-heading::after { right: -45px; }
+
+.fleet-large-heading {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.fleet-subtitle {
+  color: #666666;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Premium Car Cards */
+.premium-cars-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .premium-cars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .premium-cars-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.premium-car-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+  position: relative;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.premium-car-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+.premium-car-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: var(--primary);
+  color: #000000;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(255, 193, 7, 0.3);
+}
+
+.premium-car-img-wrapper {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.premium-car-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.premium-car-card:hover .premium-car-img {
+  transform: scale(1.08);
+}
+
+.premium-car-content {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 1.5rem;
+}
+
+.premium-car-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.premium-car-specs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.spec-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #555555;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.spec-icon {
+  color: #000000;
+}
+
+.premium-car-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+@media (max-width: 576px) {
+  .premium-car-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+  .btn-premium-book {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.premium-car-price {
+  display: flex;
+  align-items: baseline;
+  color: #000000;
+}
+
+.price-symbol {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.price-amount {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0 0.1rem;
+}
+
+.price-unit {
+  font-size: 0.9rem;
+  color: #666666;
+  font-weight: 500;
+}
+
+.btn-premium-book {
+  background-color: var(--primary);
+  color: #000000;
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+}
+
+.btn-premium-book:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 193, 7, 0.4);
+  color: #000000;
+}
+
+/* Section 4: Benefits Strip */
+.cars-benefits-section {
+  padding: 0 1rem;
+}
+
+.benefits-strip-container {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  border: 1px solid rgba(0,0,0,0.02);
+}
+
+@media (min-width: 576px) {
+  .benefits-strip-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .benefits-strip-container {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem;
+  }
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.benefit-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 193, 7, 0.15);
+  color: var(--primary-hover);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.benefits-strip-container:hover .benefit-icon-wrapper {
+  transform: scale(1.05);
+}
+
+.benefit-text strong {
+  display: block;
+  font-size: 1.05rem;
+  color: #000000;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+}
+
+.benefit-text p {
+  color: #666666;
+  font-size: 0.9rem;
+  margin: 0;
+}

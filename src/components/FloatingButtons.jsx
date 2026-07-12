@@ -1,6 +1,7 @@
 import React from 'react';
 import { Phone, MessageCircle } from 'lucide-react';
 import './FloatingButtons.css';
+import WhatsAppIcon from './WhatsAppIcon';
 
 const FloatingButtons = () => {
   return (
@@ -12,7 +13,7 @@ const FloatingButtons = () => {
         className="float-btn whatsapp-btn"
         aria-label="WhatsApp Us"
       >
-        <MessageCircle size={28} />
+        <WhatsAppIcon size={28} />
       </a>
       <a 
         href="tel:+918369469197" 
